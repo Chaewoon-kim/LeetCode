@@ -3,6 +3,8 @@ class Solution {
       //HashMap으로 시간복잡도 개선
       Map<Integer , Integer> numsMap = new HashMap<>();
 
+
+      //key와 value를 바꿔 Map으로 저장 -> 출력하고자 하는 값은 배열의 인덱
       for(int i = 0 ; i < nums.length ; i++){
         numsMap.put(nums[i] , i); 
       }
