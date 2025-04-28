@@ -3,14 +3,9 @@ class Solution {
         Arrays.sort(nums);
 
         int sum = 0; 
-        List<Integer> pairs = new ArrayList<>();
-
-        for(int num : nums){
-
-            pairs.add(num);
-            if(pairs.size() == 2){
-                sum += Collections.min(pairs);
-                pairs.clear();
+        for(int i = 0 ; i < nums.length; i++){
+            if(i % 2  == 0){
+                sum += nums[i];
             }
         }
 
